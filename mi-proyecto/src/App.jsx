@@ -1,6 +1,9 @@
 import { Routes, Route, Navigate, Link } from "react-router-dom";
 import Constructor from "./pages/Constructor.jsx";
 import Home from "./pages/Home.jsx";
+import Log_In from "./pages/Log_In.jsx";
+import Sign_in_Company from "./pages/Sign_In_Company.jsx";
+import Sign_in_User from "./pages/Sign_In_User.jsx";
 
 function NotFound() {
   return (
@@ -23,6 +26,9 @@ export default function App() {
         <Route path="/" element={<Navigate to="/constructor" replace />} />
         <Route path="/constructor" element={<Constructor />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/log_in" element={<Log_In />} /> 
+        <Route path="/sign_in_company" element={<Sign_in_Company />} />
+        <Route path="/sign_in_user" element={<Sign_in_User />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
