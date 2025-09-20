@@ -6,6 +6,7 @@ export default function Sign_In_User() {
     password: "",
     name: "",
     ci:"",
+    birthDate: "",
   });
 
   const handleChange = (e) => {
@@ -56,6 +57,14 @@ export default function Sign_In_User() {
           placeholder="Cual es su C.I?"
           required
         />
+        <br />
+        <label htmlFor="birthDate">Fecha de nacimiento</label>
+        <input type="date" 
+          id="birthDate"
+          value={person.birthDate}
+          onChange={handleChange}
+          placeholder="Cual es su fecha de nacimiento?"
+          required/>
         <br />
         <button type="submit">
           Registrar empresa
