@@ -154,16 +154,14 @@ export default function CompanyForm() {
           id="subGroup"
           type="text"
           placeholder="Cual es su subgrupo?"
-                    value={company.subGroup}
+          value={company.subGroup}
           onChange={handleChange}
           className="border p-2 rounded w-full"
         />
         <br />
 
-
         {error && <p className="text-red-500">{error}</p>}
         {success && <p className="text-green-500">{success}</p>}
-
 
         <button
           type="submit"
