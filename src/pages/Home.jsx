@@ -8,44 +8,20 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { GoMail } from "react-icons/go";
 {/*-------------------------------Components------------------------------- */}
 import Course_Card from "../components/Course_Card";
+import Header_Nav from "../components/Header_Nav";
 
 export default function Home() {
   return (
     <div className="w-full h-screen items-center flex flex-col p-0">
 {/*-----------------------------Header and Nav----------------------------- */}
-      <header className="flex justify-between items-centmt-10er bg-gray-200 w-[95%] my-4 rounded-4xl ">
-        <nav className="w-full flex items-center justify-around ">
-          <div class="flex basis-1/8 items-center ">
-            <img src={Logo} alt="Logo De Jobee" class="h-23" />
-            <p className="text-xl font-bold">JoBee</p>
-          </div>
-          <ul className="flex gap-6 items-center">
-            <li>
-              <Link to="/sign_in_user">
-                <button className="buttons_interactive  ">
-                  Registrarse como persona
-                </button>
-              </Link>
-            </li>
-            <li>
-              <Link to="/sign_in_company">
-                <button className="buttons_interactive  ">
-                  Registrarse como empresa
-                </button>
-              </Link>
-            </li>
-            <li>
-              <Link to="/log_in">
-                <button className="buttons_interactive  ">
-                  Iniciar Sesión
-                </button>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-{/*-----------------------------Presentation--------------
-            <Course_Card----------------- */}
+<Header_Nav
+  boton={{ 
+    title: "Registrarce como Persona", link: "/sign_in_user",
+    title: "Registrarse como Empresa", link: "/sign_in_company",
+    title: "Iniciar Sesión", link: "/log_in"
+  }}
+/>
+{/*-----------------------------Presentation------------------------------- */}
       <div className="bg-yellow-200 rounded-2xl w-[95%] flex justify-center items-center ">
         <div className="py-10 pl-4 text-start w-3/4 flex flex-col gap-6">
           <h1 className="text-2xl font-bold w-1/2">Conectando jóvenes a su primera experiencia laboral</h1>
