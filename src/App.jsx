@@ -7,14 +7,12 @@ import UserCompany from "./pages/user/CompanyPage.jsx";
 import UserCourses from "./pages/user/courses/CoursesPage.jsx";
 import UserContacts from "./pages/user/contact/ContactPage.jsx";
 import UserPostulationsPage from "./pages/user/postulations/UserPostulationsPage.jsx";
-import UserCourses from "./pages/user/courses/CoursesPage.jsx";
 
 import CompanyDashboard from "./pages/company/DashboardPage.jsx";
 import CompanyProfile from "./pages/company/profile/CompanyProfilePage.jsx";
 import CompanyUsers from "./pages/company/users/UsersPage.jsx";
 import CompanyCourses from "./pages/company/courses/CompanyCoursesPage.jsx";
 import CompanyContacts from "./pages/company/contact/ContactPage.jsx";
-import CompanyCourses from "./pages/company/courses/CompanyCoursesPage.jsx";
 import CompanyPostulationsPage from "./pages/company/postulations/CompanyPostulationsPage.jsx";
 
 import HomePage from "./pages/public/HomePage.jsx";
@@ -82,15 +80,6 @@ export default function App() {
       />
 
       <Route
-        path="/user/courses"
-        element={
-          <ProtectedRoute>
-            <UserCourses />
-          </ProtectedRoute>
-        }
-      />
-
-      <Route
         path="/company/dashboard"
         element={
           <ProtectedRoute>
@@ -135,14 +124,6 @@ export default function App() {
         element={
           <ProtectedRoute>
             <CompanyPostulationsPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/company/courses"
-        element={
-          <ProtectedRoute>
-            <CompanyCourses />
           </ProtectedRoute>
         }
       />
