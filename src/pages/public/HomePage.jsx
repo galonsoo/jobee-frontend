@@ -144,23 +144,23 @@ function Metrics() {
 
 function CallToAction() {
   return (
-    <section className="rounded-3xl bg-[#E69C00] px-8 py-12 text-center text-white">
-      <h3 className="text-2xl font-bold md:text-3xl">
+    <section className="rounded-3xl bg-[#FFF0C2] px-8 py-12 text-center">
+      <h3 className="text-2xl font-bold text-[#1F2937] md:text-3xl">
         ¿Listo para dar tu primer paso profesional?
       </h3>
-      <p className="mt-3 text-sm text-[#FFF8E7] md:text-base">
+      <p className="mt-3 text-sm text-[#4B5563] md:text-base">
         Creamos un espacio sencillo para aprender, practicar y conectar. Elegí tu plan y empecemos hoy.
       </p>
       <div className="mt-6 flex flex-wrap justify-center gap-4">
         <Link
           to="/auth/signup/user"
-          className="rounded-xl border-b-4 border-[#FFF0C2] bg-white px-6 py-2 text-sm font-semibold text-[#1F2937] transition-all duration-150 ease-out hover:bg-[#FFF7E0] md:text-base"
+          className="rounded-xl border-b-4 border-[#E69C00] bg-white px-6 py-2 text-sm font-semibold text-[#1F2937] transition-all duration-150 ease-out hover:scale-105 hover:bg-[#FFF8E7] md:text-base"
         >
           Crear cuenta joven
         </Link>
         <Link
           to="/auth/signup/company"
-          className="rounded-xl border-b-4 border-[#FFF0C2] bg-[#FFF0C2] px-6 py-2 text-sm font-semibold text-[#1F2937] transition-all duration-150 ease-out hover:bg-[#FFF7E0] md:text-base"
+          className="rounded-xl border-b-4 border-[#E69C00] bg-white px-6 py-2 text-sm font-semibold text-[#1F2937] transition-all duration-150 ease-out hover:scale-105 hover:bg-[#FFF8E7] md:text-base"
         >
           Sumarse como empresa
         </Link>
@@ -180,7 +180,7 @@ function ContactFooter() {
         <div className="flex flex-col items-center gap-4 text-sm md:flex-row md:gap-10 md:text-base">
           <span className="flex items-center gap-2">
             <MdPlace />
-            Canelones 1564
+            Canelones 1162
           </span>
           <span className="flex items-center gap-2">
             <FaPhoneAlt />
